@@ -1,0 +1,17 @@
+#{- ~/.functions -}#
+
+# Enables or disables kwm hotkeys
+hotkeys()
+{
+  case "$1" in
+    "on") kwmc config hotkeys on; echo "Hotkeys enabled." ;;
+    "off") kwmc config hotkeys off; echo "Hotkeys disabled." ;;
+    *) printf "hotkeys: usage: hotkeys {on|off}\n" ;;
+  esac
+}
+
+# Passes basic arithmetic to bc
+maths()
+{
+  bc -l <<< "scale=2; $*"
+}

@@ -1,0 +1,56 @@
+#{- ~/.aliases -}#
+
+#{- FILE OPERATIONS -}#
+
+# Allow alias expansion for commands executed with sudo
+alias sudo="sudo "
+
+#{- GNU coreutils -}#
+
+# Sort directories first and colorize output
+alias ls="ls -h --color=auto --group-directories-first"
+alias la="ls -A"
+alias ll="ls -l"
+
+# Ask before overwriting files
+alias mv="mv -i"
+alias cp="cp -i"
+alias rm="rm -i --preserve-root --one-file-system"
+
+# Create and remove empty subdirectories
+alias mkdir="mkdir -p"
+alias rmdir="rmdir -p"
+
+# Don't recursively modify permissions on root directory
+alias chmod="chmod --preserve-root"
+alias chown="chown --preserve-root"
+alias chgrp="chgrp --preserve-root"
+
+# Colorize output
+alias grep="grep --color"
+alias egrep="grep -E --color"
+alias fgrep='grep -F --color'
+
+# Human readable file system inspection
+alias df="df -h"
+
+# Human readable file size inspection
+alias du="du -sh"
+
+
+#{- NETWORKING -}#
+
+# Don't ping infinitely
+alias ping="ping -c 4"
+
+# Show progress while syncing
+alias rsync="rsync --progress"
+
+
+#{- SHELL INTROSPECTION -}#
+
+# Print the value of the $PATH variable in a human readable format
+alias path='printf "${PATH//:/\\n}\n"'
+
+# Print current aliases in a human readable format
+alias aliases='alias | sed -e "s/=/ -> /" -e "s/alias //"'
