@@ -100,8 +100,8 @@ set nocompatible
     set linebreak
     set tw=80
 
-  " History should hold a thousand entires "
-    set history=1000
+  " History holds as many entries as it can "
+    set history=10000
 
   " Spellchecking uses American Enlish and ignores any asian characters "
     set spelllang=en_us,cjk
