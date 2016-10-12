@@ -26,6 +26,9 @@ set nocompatible
   " Toggles cursor crosshair "
     command Crosshair :setlocal cursorline! cursorcolumn! ruler
 
+  " Toggles line numbering
+    command Numbers :setlocal number! relativenumber!
+
 
 "{- INTERFACE -}"
 
@@ -45,7 +48,7 @@ set nocompatible
   " Don't wrap lines "
     set nowrap
 
-  " Don't show line numbers "
+  " Don't show line numbers unless asked "
     set numberwidth=1
     set nonumber
 
