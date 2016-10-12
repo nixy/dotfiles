@@ -65,13 +65,6 @@ set nocompatible
   " Display the current mode in the status bar "
     set showmode
 
-  " Scroll the screen vertically at 8 rows "
-    set scrolloff=8
-
-  " Scroll the screen horizontally at 1 column "
-    set sidescrolloff=0
-    set sidescroll=1
-
   " Make backspace acts as you would expect "
     set backspace=indent,eol,start
 
