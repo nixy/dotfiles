@@ -11,23 +11,23 @@ set nocompatible
 
 "{- COMMANDS -}"
 
-  " Removes blank lines "
-    command RemoveBlankLines :g/^\s*$/d
+  " Remove blank lines "
+    command! RemoveBlankLines :g/^\s*$/d
 
-  " Removes trailing whitespace "
-    command RemoveTrailingWhitespace :%s/\s\+$//
+  " Remove trailing whitespace "
+    command! RemoveTrailingWhitespace :%s/\s\+$//
 
-  " Toggles spellchecking "
-    command Spelling :setlocal spell! spell?
+  " Toggle spellchecking "
+    command! Spelling :setlocal spell! spell?
 
-  " Toggles invisible characters "
-    command ShowInvisible :setlocal list!
+  " Toggle invisible characters "
+    command! ShowInvisible :setlocal list!
 
-  " Toggles cursor crosshair "
-    command Crosshair :setlocal cursorline! cursorcolumn! ruler
+  " Toggle cursor crosshair "
+    command! Crosshair :setlocal cursorline! cursorcolumn! ruler
 
-  " Toggles line numbering
-    command Numbers :setlocal number! relativenumber!
+  " Toggle line numbering
+    command! Numbers :setlocal number! relativenumber!
 
 
 "{- INTERFACE -}"
