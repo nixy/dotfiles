@@ -109,6 +109,9 @@ set nocompatible
   " Store the viminfo file in the .vim directory "
     set viminfo+=n$HOME/.vim/.viminfo
 
+  " Don't use a pager "
+    set nomore
+
   " Use the system clipboard when deleting, pasting, or yanking "
     if has("clipboard")
       set clipboard=unnamed
