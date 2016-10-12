@@ -90,8 +90,8 @@ set nocompatible
 
   " Advanced command-line completion "
     set wildmenu
-    set wildignore=*.o,*.obj,*~
-    set wildignore+=*.png,*.jpg,*.gif
+    set wildignorecase
+    set wildmode=longest,full
 
   " Use UTF-8 "
     set encoding=utf-8
