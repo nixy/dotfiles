@@ -9,12 +9,6 @@ set nocompatible
     runtime bundle/pathogen/autoload/pathogen.vim
     execute pathogen#infect()
 
-  " Load the pencil plugin for markdown files "
-  augroup pencil
-    autocmd!
-    autocmd FileType markdown,mkd call pencil#init()
-  augroup END
-
 "{- COMMANDS -}"
 
   " Removes blank lines "
