@@ -37,10 +37,11 @@ set nocompatible
     filetype plugin on
     syntax on
 
-  " Use two spaces instead of tabs "
-    set softtabstop=2
-    set shiftwidth=2
-    set tabstop=2
+  " Use four spaces instead of tabs "
+  " Can be overriden by ftplugin and sleuth "
+    set softtabstop=4
+    set shiftwidth=4
+    set tabstop=4
 
   " Don't redraw the screen unless necessary "
     set lazyredraw
