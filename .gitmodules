@@ -37,3 +37,6 @@
 [submodule "vim/bundle/filetype-nix"]
 	path = vim/bundle/filetype-nix
 	url = git@github.com:LnL7/vim-nix.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab
