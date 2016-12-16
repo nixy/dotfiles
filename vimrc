@@ -9,6 +9,22 @@ set nocompatible
     runtime bundle/pathogen/autoload/pathogen.vim
     execute pathogen#infect()
 
+  "{- SUPERTAB -}"
+    set complete+=kspell
+    set completeopt=longest,menuone
+
+    " Use context sensitive completion to allow filename and omni completion
+    let g:SuperTabDefaultCompletionType = "context"
+
+    " Completion context only lasts for current completion
+    let g:SuperTabRetainCompletionDuration = "completion"
+
+    " Use enhanced longest matching completion
+    let g:SuperTabLongestEnhanced = 1
+
+    " Attempt to close preview window when the completion finishes
+    let g:SuperTabClosePreviewOnPopupClose = 1
+
 "{- COMMANDS -}"
 
   " Remove blank lines "
@@ -42,6 +58,7 @@ set nocompatible
     set softtabstop=4
     set shiftwidth=4
     set tabstop=4
+    set expandtab
 
   " Don't redraw the screen unless necessary "
     set lazyredraw
