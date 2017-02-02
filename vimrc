@@ -10,20 +10,14 @@ set nocompatible
     execute pathogen#infect()
 
   "{- SUPERTAB -}"
-    set complete+=kspell
-    set completeopt=longest,menuone
-
     " Use context sensitive completion to allow filename and omni completion
-    let g:SuperTabDefaultCompletionType = "context"
+      let g:SuperTabDefaultCompletionType = "context"
 
     " Completion context only lasts for current completion
-    let g:SuperTabRetainCompletionDuration = "completion"
+      let g:SuperTabRetainCompletionDuration = "completion"
 
     " Use enhanced longest matching completion
-    let g:SuperTabLongestEnhanced = 1
-
-    " Attempt to close preview window when the completion finishes
-    let g:SuperTabClosePreviewOnPopupClose = 1
+      let g:SuperTabLongestEnhanced = 1
 
 "{- COMMANDS -}"
 
@@ -53,11 +47,11 @@ set nocompatible
     filetype plugin on
     syntax on
 
-  " Use four spaces instead of tabs "
+  " Use two spaces instead of tabs "
   " Can be overriden by ftplugin and sleuth "
-    set softtabstop=4
-    set shiftwidth=4
-    set tabstop=4
+    set softtabstop=2
+    set shiftwidth=2
+    set tabstop=2
     set expandtab
 
   " Don't redraw the screen unless necessary "
@@ -110,6 +104,12 @@ set nocompatible
     set wildignorecase
     set wildmode=longest,full
 
+  " Enable spelling completion
+    set complete+=kspell
+
+  " Match the longest completion option then display menu
+    set completeopt=menuone,longest
+
   " Use UTF-8 "
     set encoding=utf-8
 
@@ -131,5 +131,5 @@ set nocompatible
 
   " Use the system clipboard when deleting, pasting, or yanking "
     if has("clipboard")
-      set clipboard=unnamed
+      set clipboard=unnamedplus,autoselect
     endif
