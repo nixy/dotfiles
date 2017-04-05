@@ -1,0 +1,69 @@
+# Enable kwm compatibility khd kwm on
+khd kwm on
+
+cmd + shift - q : kwmc quit
+cmd + shift - r : kwmc config reload && khd -e "reload"
+
+cmd - return : "$HOME"/.kwm/iterm
+cmd - escape : "$HOME"/.kwm/screensaver
+
+cmd + alt + ctrl - space : kwmc config focus-follows-mouse toggle
+
+cmd - h : kwmc window -f west
+cmd - j : kwmc window -f south
+cmd - k : kwmc window -f north
+cmd - l : kwmc window -f east
+
+cmd + shift - h : kwmc window -s west
+cmd + shift - j : kwmc window -s south
+cmd + shift - k : kwmc window -s north
+cmd + shift - l : kwmc window -s east
+
+cmd + ctrl - h : kwmc window -c expand 0.05 west
+cmd + ctrl - j : kwmc window -c expand 0.05 south
+cmd + ctrl - k : kwmc window -c expand 0.05 north
+cmd + ctrl - l : kwmc window -c expand 0.05 east
+
+cmd + shift + ctrl - h : kwmc window -c reduce 0.05 west
+cmd + shift + ctrl - j : kwmc window -c reduce 0.05 south
+cmd + shift + ctrl - k : kwmc window -c reduce 0.05 north
+cmd + shift + ctrl - l : kwmc window -c reduce 0.05 east
+
+cmd - tab         : kwmc window -f next
+cmd + shift - tab : kwmc window -f prev 
+
+cmd - f : kwmc window -z fullscreen
+cmd - r : kwmc tree rotate 90
+
+cmd + ctrl - b : kwmc window -c type bsp
+cmd + ctrl - m : kwmc window -c type monocle
+cmd + ctrl - f : kwmc window -c type float
+
+cmd + shift - b : kwmc space -t bsp
+cmd + shift - m : kwmc space -t monocle
+cmd + shift - f : kwmc space -t float
+
+cmd - 1 : kwmc space -fExperimental 1
+cmd - 2 : kwmc space -fExperimental 2
+cmd - 3 : kwmc space -fExperimental 3
+cmd - 4 : kwmc space -fExperimental 4
+cmd - 5 : kwmc space -fExperimental 5
+cmd - 6 : kwmc space -fExperimental 6
+cmd - 7 : kwmc space -fExperimental 7
+cmd - 8 : kwmc space -fExperimental 8
+cmd - 9 : kwmc space -fExperimental 9
+cmd - 0 : kwmc space -fExperimental 10
+
+cmd + shift - 1 : kwmc window -m space 1
+cmd + shift - 2 : kwmc window -m space 2
+cmd + shift - 3 : kwmc window -m space 3
+cmd + shift - 4 : kwmc window -m space 4
+cmd + shift - 5 : kwmc window -m space 5
+cmd + shift - 6 : kwmc window -m space 6
+cmd + shift - 7 : kwmc window -m space 7
+cmd + shift - 8 : kwmc window -m space 8
+cmd + shift - 9 : kwmc window -m space 9
+cmd + shift - 0 : kwmc window -m space 10
+
+cmd - backspace : kwmc display -f next
+cmd + shift - backspace : kwmc window -m display next

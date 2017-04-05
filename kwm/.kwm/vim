@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+osascript <<< "
+  tell application \"iTerm2\"
+    create window with default profile command \"/Users/andrew/.nix-profile/bin/vim \\\"$@\\\"\"
+  end tell
+"

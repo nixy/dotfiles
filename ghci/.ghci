@@ -1,0 +1,6 @@
+-- Enable overloaded string literals
+:set -XOverloadedStrings
+-- Enable multiline formatting
+:set +m
+:set prompt  "\ESC[1;35mλ\ESC[1;34m>\ESC[0m "
+:set prompt2 "\ESC[1;34m|\ESC[1;35m>\ESC[0m "

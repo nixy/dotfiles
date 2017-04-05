@@ -1,0 +1,48 @@
+#{- ~/.pythonrc -}#
+
+import atexit
+import os
+import readline
+import sys
+
+blue    = '\001\033[1;34m\002'
+yellow  = '\001\033[1;33m\002'
+
+magenta = '\001\033[1;35m\002'
+red     = '\001\033[1;31m\002'
+reset   = '\001\033[0m\002'
+
+# Primary prompt: (>>> ) in magenta
+sys.ps1 = blue + '>' + reset + ' '
+# Secondary prompt: (... ) in red
+sys.ps2 = yellow + '.' + reset + ' '
+
+# Use ~/.history/python as a history file instead of ~/.python_history
+def custom_readline():
+    import atexit
+    try:
+        import readline
+        import rlcompleter
+    except ImportError:
+        return
+
+    readline_doc = getattr(readline, '__doc__', '')
+    if readline_doc is not None and 'libedit' in readline_doc:
+        readline.parse_and_bind('bind ^I rl_complete')
+    else:
+        readline.parse_and_bind('tab: complete')
+    
+    try:
+        readline.read_init_file()
+    except OSError:
+        pass
+
+    if readline.get_current_history_length() == 0:
+        history = os.path.join(os.path.expanduser('~'), '.history', 'python')
+    try:
+        readline.read_history_file(history)
+    except IOError:
+        pass
+    atexit.register(readline.write_history_file, history)
+
+sys.__interactivehook__ = custom_readline
