@@ -3,35 +3,10 @@
 " Use vim defaults "
 set nocompatible
 
-"{- PLUGINS -}"
-
-  " Load pathogen, the plugin manager, and all of the plugins "
+"{- PLUGIN MANAGER -}"
+  " Load pathogen, the plugin manager, which then loads all plugins "
     runtime bundle/pathogen/autoload/pathogen.vim
     execute pathogen#infect()
-
-  "{- SLIME -}"
-    " Use screen as slime's target
-      let g:slime_target = "screen"
-
-    " Use a temporary file to contain slime's paste buffer
-      let g:slime_paste_file = tempname()
-
-    " Default session for screen
-      let g:slime_default_config = {"sessionname": "REPL", "windowname": ""}
-
-  "{- SUPERTAB -}"
-    " Use the default vim completion keys for supertab completion
-      let g:SuperTabMappingForward = '<c-p>'
-      let g:SuperTabMappingBackward = '<c-n>'
-
-    " Use context sensitive completion to allow filename and omni completion
-      let g:SuperTabDefaultCompletionType = "context"
-
-    " Completion context only lasts for current completion
-      let g:SuperTabRetainCompletionDuration = "completion"
-
-    " Use enhanced longest matching completion
-      let g:SuperTabLongestEnhanced = 1
 
 "{- COMMANDS -}"
 
@@ -52,7 +27,6 @@ set nocompatible
 
   " Toggle line numbering
     command! Numbers :setlocal number! relativenumber!
-
 
 "{- INTERFACE -}"
 
@@ -147,3 +121,64 @@ set nocompatible
     if has("clipboard")
       set clipboard=unnamed,unnamedplus
     endif
+
+"{- PLUGINS -}"
+
+  "{- SLIME -}"
+    " Use screen as slime's target
+      let g:slime_target = "screen"
+
+    " Use a temporary file to contain slime's paste buffer
+      let g:slime_paste_file = tempname()
+
+    " Default session for screen
+      let g:slime_default_config = {"sessionname": "REPL", "windowname": ""}
+
+  "{- SUPERTAB -}"
+    " Use the default vim completion keys for supertab completion
+      let g:SuperTabMappingForward = '<c-p>'
+      let g:SuperTabMappingBackward = '<c-n>'
+
+    " Use context sensitive completion to allow filename and omni completion
+      let g:SuperTabDefaultCompletionType = "context"
+
+    " Completion context only lasts for current completion
+      let g:SuperTabRetainCompletionDuration = "completion"
+
+    " Use enhanced longest matching completion
+      let g:SuperTabLongestEnhanced = 1
+
+  "{- TAGBAR -}"
+    " Use `hasktags` to generate tags for Haskell files
+      let g:tagbar_type_haskell = {
+        \ 'ctagsbin'  : 'hasktags',
+        \ 'ctagsargs' : '-x -c -o-',
+        \ 'kinds'     : [
+            \  'm:modules:0:1',
+            \  'd:data: 0:1',
+            \  'd_gadt: data gadt:0:1',
+            \  't:type names:0:1',
+            \  'nt:new types:0:1',
+            \  'c:classes:0:1',
+            \  'cons:constructors:1:1',
+            \  'c_gadt:constructor gadt:1:1',
+            \  'c_a:constructor accessors:1:1',
+            \  'ft:function types:1:1',
+            \  'fi:function implementations:0:1',
+            \  'o:others:0:1'
+        \ ],
+        \ 'sro'        : '.',
+        \ 'kind2scope' : {
+            \ 'm' : 'module',
+            \ 'c' : 'class',
+            \ 'd' : 'data',
+            \ 't' : 'type'
+        \ },
+        \ 'scope2kind' : {
+            \ 'module' : 'm',
+            \ 'class'  : 'c',
+            \ 'data'   : 'd',
+            \ 'type'   : 't'
+        \ }
+    \ }
+
