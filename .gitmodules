@@ -19,3 +19,6 @@
 [submodule "vim/.vim/bundle/pathogen"]
 	path = vim/.vim/bundle/pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule "vim/.vim/bundle/endwise"]
+	path = vim/.vim/bundle/endwise
+	url = https://github.com/tpope/vim-endwise
