@@ -1,0 +1,3 @@
+[submodule "vim/.vim/bundle/slime"]
+	path = vim/.vim/bundle/slime
+	url = http://github.com/jpalardy/vim-slime
