@@ -7,3 +7,6 @@
 [submodule "vim/.vim/bundle/sleuth"]
 	path = vim/.vim/bundle/sleuth
 	url = https://github.com/tpope/vim-sleuth
+[submodule "vim/.vim/bundle/fugitive"]
+	path = vim/.vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive
