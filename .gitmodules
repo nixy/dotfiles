@@ -16,3 +16,6 @@
 [submodule "vim/.vim/bundle/commentary"]
 	path = vim/.vim/bundle/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "vim/.vim/bundle/pathogen"]
+	path = vim/.vim/bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen
