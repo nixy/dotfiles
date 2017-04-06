@@ -22,7 +22,7 @@ set nocompatible
   "{- SUPERTAB -}"
     " Use the default vim completion keys for supertab completion
       let g:SuperTabMappingForward = '<c-p>'
-      let g:SuperTabMappingBackward = '<c-p>'
+      let g:SuperTabMappingBackward = '<c-n>'
 
     " Use context sensitive completion to allow filename and omni completion
       let g:SuperTabDefaultCompletionType = "context"
