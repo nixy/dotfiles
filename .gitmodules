@@ -13,3 +13,6 @@
 [submodule "vim/.vim/bundle/eunuch"]
 	path = vim/.vim/bundle/eunuch
 	url = https://github.com/tpope/vim-eunuch
+[submodule "vim/.vim/bundle/commentary"]
+	path = vim/.vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary
