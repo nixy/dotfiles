@@ -1,6 +1,9 @@
 [submodule "vim/.vim/bundle/slime"]
 	path = vim/.vim/bundle/slime
-	url = http://github.com/jpalardy/vim-slime
+	url = https://github.com/jpalardy/vim-slime
 [submodule "vim/.vim/bundle/filetype-nix"]
 	path = vim/.vim/bundle/filetype-nix
 	url = https://github.com/LnL7/vim-nix
+[submodule "vim/.vim/bundle/sleuth"]
+	path = vim/.vim/bundle/sleuth
+	url = https://github.com/tpope/vim-sleuth
