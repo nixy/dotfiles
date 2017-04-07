@@ -28,9 +28,6 @@
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
-[submodule "vim/.vim/bundle/vim-vinegar"]
-	path = vim/.vim/bundle/vinegar
-	url = https://github.com/tpope/vim-vinegar
 [submodule "vim/.vim/bundle/vim-snipmate"]
 	path = vim/.vim/bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate
@@ -43,3 +40,6 @@
 [submodule "vim/.vim/bundle/snipmate-tlib"]
 	path = vim/.vim/bundle/snipmate-tlib
 	url = https://github.com/tomtom/tlib_vim
+[submodule "vim/.vim/bundle/vinegar"]
+	path = vim/.vim/bundle/vinegar
+	url = https://github.com/tpope/vim-vinegar
