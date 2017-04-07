@@ -47,7 +47,10 @@ set nocompatible
 
   " Don't wrap lines "
     set nowrap
-
+  " Allow wrapped lines to be traversed with 'j' and 'k'
+    noremap j gj
+    noremap k gk
+    
   " Don't show line numbers unless asked "
     set numberwidth=1
     set nonumber
