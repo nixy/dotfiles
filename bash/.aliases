@@ -5,7 +5,7 @@
 # Allow alias expansion for commands executed with sudo
 alias sudo="sudo "
 
-#{- GNU coreutils -}#
+#{- GNU COREUTILS -}#
 
 # Sort directories first and colorize output
 alias ls="ls -h --color=auto --group-directories-first"
