@@ -35,6 +35,9 @@ set nocompatible
     filetype plugin on
     syntax on
 
+    " Ensure bash syntax highlighting is used for files with 'sh' filetype "
+    let g:is_bash=1
+
   " Use two spaces instead of tabs "
   " Can be overriden by ftplugin and sleuth "
     set softtabstop=2
