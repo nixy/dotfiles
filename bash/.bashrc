@@ -21,9 +21,3 @@ fi
 if [ -f "$HOME/.private_functions" ] && [ -r "$HOME/.private_functions" ]; then
   . "$HOME/.private_functions"
 fi
-
-# Source completion
-if [ -f "$HOME/.nix-profile/etc/profile.d/bash_completion.sh" ] && \
-   [ -r "$HOME/.nix-profile/etc/profile.d/bash_completion.sh" ]; then
-  . "$HOME/.nix-profile/etc/profile.d/bash_completion.sh"
-fi

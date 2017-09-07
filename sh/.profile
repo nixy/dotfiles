@@ -10,7 +10,7 @@ no_color="\[\033[0m\]"
 # Secondary prompt: (> )
 # Primary prompt is magenta on local machines, red on remote hosts
 case $(hostname) in
-  pebble|stone|rock|boulder)
+  point|line|triangle|square|pentagon)
     export PS1="${magenta}\$${no_color} "
     export PS2="${red}>${no_color} "
     ;;
@@ -52,10 +52,3 @@ fi
 export HISTFILE="$HOME/.history/sh"
 export HISTSIZE=10000
 
-#{- SOURCING -}#
-
-# Source nix profile configuration
-if [ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ] \
-&& [ -r "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
-  . "$HOME/.nix-profile/etc/profile.d/nix.sh"
-fi
