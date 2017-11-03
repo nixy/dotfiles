@@ -1,25 +1,5 @@
 #{- ~/.profile -}#
 
-#{- PROMPT -}#
-
-magenta="\[\033[1;35m\]"
-red="\[\033[1;31m\]"
-no_color="\[\033[0m\]"
-
-# Primary prompt: ($/# )
-# Secondary prompt: (> )
-# Primary prompt is magenta on local machines, red on remote hosts
-case $(hostname) in
-  point|line|triangle|square|pentagon)
-    export PS1="${magenta}\$${no_color} "
-    export PS2="${red}>${no_color} "
-    ;;
-  *)
-    export PS1="$red\$$no_color "
-    export PS2="$magenta>$no_color "
-    ;;
-esac
-
 #{- PATH -}#
 
 # Prepend ~/.local/bin to the path and append the current directory to the path
@@ -49,6 +29,6 @@ if [ -w "$HOME/.history/sh" ]; then
 	fi
 	touch "$HOME/.history/sh"
 fi
+export HISTSIZE=5000
 export HISTFILE="$HOME/.history/sh"
-export HISTSIZE=10000
-
+export HISTFILESIZE=10000

@@ -8,9 +8,9 @@ alias sudo="sudo "
 #{- GNU COREUTILS -}#
 
 # Sort directories first and colorize output
-alias ls="ls -h --color=auto --group-directories-first"
-alias la="ls -A"
-alias ll="ls -l"
+alias ls="ls -hF --color=auto --group-directories-first"
+alias la="ls -AF"
+alias ll="ls -lF"
 
 # Ask before overwriting files
 alias mv="mv -i"

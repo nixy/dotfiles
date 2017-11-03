@@ -1,5 +1,32 @@
 #{- ~/.bashrc -}#
 
+#{- PROMPT -}#
+
+red="\[\033[1;31m\]"
+green="\[\033[1;32m\]"
+yellow="\[\033[1;33m\]"
+blue="\[\033[1;34m\]"
+magenta="\[\033[1;35m\]"
+cyan="\[\033[1;36m\]"
+no_color="\[\033[0m\]"
+
+# Interactive Prompt: "$ " in green
+export PS1="${green}\$${no_color} "
+# Continuation Prompt: "> " in cyan
+export PS2="${cyan}>${no_color} "
+# Debugging Prompt: "# " in blue
+export PS4="${blue}#${no_color} "
+
+#{- HISTORY -}#
+
+#shopt -s histappend
+#export PROMPT_COMMAND="history -a; histroy -c; history -r; $PROMPT_COMMAND"
+
+export HISTCONTROL="ignoreboth:erasedups"
+shopt -s histappend
+export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+
+
 #{- SOURCING -}#
 
 # Source aliases
