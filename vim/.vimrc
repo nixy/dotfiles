@@ -107,9 +107,8 @@ set nocompatible
   " Use UTF-8 "
     set encoding=utf-8
 
-  " Lines should be no longer than eighty characters "
+  " Wrap lines neatly
     set linebreak
-    set tw=80
 
   " History holds as many entries as it can "
     set history=10000
