@@ -1,4 +1,5 @@
 #{- ~/.pythonrc -}#
+# -*- coding: utf-8 -*-
 
 import atexit
 import os
@@ -13,9 +14,9 @@ red     = '\001\033[1;31m\002'
 reset   = '\001\033[0m\002'
 
 # Primary prompt: (>>> ) in magenta
-sys.ps1 = blue + '>' + reset + ' '
+sys.ps1 = yellow + '○' + reset + ' '
 # Secondary prompt: (... ) in red
-sys.ps2 = yellow + '.' + reset + ' '
+sys.ps2 = blue + '•' + reset + ' '
 
 # Use ~/.history/python as a history file instead of ~/.python_history
 def custom_readline():
