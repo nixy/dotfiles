@@ -8,12 +8,12 @@ set editing-mode vi
 #{- PROMPT -}#
 
 set show-mode-in-prompt on
-# Emacs mode prompt: (@) in red 
-set emacs-mode-string  "\1\033[1;32m\2@\1\033[0m\2"
-# Vim insert mode prompt: (+) in red
+# Emacs mode prompt: (@) in magenta
+set emacs-mode-string  "\1\033[1;35m\2@\1\033[0m\2"
+# Vim insert mode prompt: (+) in blue
 set vi-ins-mode-string "\1\033[1;34m\2+\1\033[0m\2"
-# Vim command mode prompt: (:) in red
-set vi-cmd-mode-string "\1\033[1;36m\2:\1\033[0m\2"
+# Vim command mode prompt: (:) in blue
+set vi-cmd-mode-string "\1\033[1;34m\2:\1\033[0m\2"
 
 #{- CONTROL CHARACTERS -}#
 
