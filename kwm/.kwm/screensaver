@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-osascript << EOF
-  tell application "ScreenSaverEngine"
-		activate
-	end tell
-EOF
