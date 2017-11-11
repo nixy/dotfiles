@@ -1,0 +1,21 @@
+[General]
+screenCount=1
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=1012b14213b138000151027287500000194280007
+clientId2=1012b14213b138000151027287500000194280006
+count=2
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_1012b14213b138000151027287500000194280007_1510358080_91322
+program1=kwin_x11
+program2=/nix/store/jd7yh3vbmai7hdd30b8ifwn9ixx93vw0-powerdevil-5.10.5/lib/libexec/org_kde_powerdevil
+restartCommand1=kwin_x11,-session,1012b14213b138000151027287500000194280007_1510358080_91322
+restartCommand2=/nix/store/jd7yh3vbmai7hdd30b8ifwn9ixx93vw0-powerdevil-5.10.5/lib/libexec/org_kde_powerdevil,-session,1012b14213b138000151027287500000194280006_1510358080_81840
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=andrew
+userId2=andrew
+wasWm1=true
+wasWm2=false
