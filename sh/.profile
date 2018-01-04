@@ -1,5 +1,9 @@
 #{- ~/.profile -}#
 
+# Only execute this file once per shell
+if [ -n "$__PROFILE_SOURCED" ]; then return; fi
+export __PROFILE_SOURCED=1
+
 #{- PATH -}#
 
 # Prepend ~/.local/bin to the path and append the current directory to the path

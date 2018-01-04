@@ -29,22 +29,29 @@ export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_C
 
 #{- SOURCING -}#
 
-# Source aliases
+
+# Source profile, if it hasn't already been loaded
+if [ -z "$__PROFILE_DONE" ]; then
+    . $HOME/.profile
+fi
+
+
+# Source aliases, if they exist
 if [ -f "$HOME/.aliases" ] && [ -r "$HOME/.aliases" ]; then
   . "$HOME/.aliases"
 fi
 
-# Source private aliases
+# Source private aliases, if they exist
 if [ -f "$HOME/.private_aliases" ] && [ -r "$HOME/.private_aliases" ]; then
   . "$HOME/.private_aliases"
 fi
 
-# Source functions
+# Source functions, if they exist
 if [ -f "$HOME/.functions" ] && [ -r "$HOME/.functions" ]; then
   . "$HOME/.functions"
 fi
 
-# Source private functions
+# Source private functions, if they exist
 if [ -f "$HOME/.private_functions" ] && [ -r "$HOME/.private_functions" ]; then
   . "$HOME/.private_functions"
 fi
