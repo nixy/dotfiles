@@ -27,7 +27,7 @@ export LESSHISTFILE="-"
 export PYTHONSTARTUP="$HOME/.pythonrc"
 
 # History preferences
-if [ -w "$HOME/.history/sh" ]; then
+if [ ! -w "$HOME/.history/sh" ]; then
 	if [ ! -d "$HOME/.history" ]; then
 		mkdir "$HOME/.history"
 	fi
