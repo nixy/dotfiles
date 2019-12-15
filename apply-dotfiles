@@ -1,0 +1,12 @@
+#!/usr/bin/env nix-shell
+#! nix-shell -p stow
+
+stow bash
+stow sh
+stow .inputrc # Readline configuration
+
+stow vim
+stow .vimrc
+
+stow ruby
+stow python
