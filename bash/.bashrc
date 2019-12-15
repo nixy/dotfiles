@@ -12,6 +12,10 @@ no_color="\[\033[0m\]"
 
 # Interactive Prompt: "$ " in green
 export PS1="${green}\$${no_color} "
+if [ "${HOSTNAME}" != "crypt" ]; then
+  PS1="${PS1}${blue}${HOSTNAME} ${PS1}"
+fi
+
 # Continuation Prompt: "> " in cyan
 export PS2="${cyan}>${no_color} "
 # Debugging Prompt: "# " in blue
