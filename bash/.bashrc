@@ -55,3 +55,7 @@ fi
 if [ -f "$HOME/.private_functions" ] && [ -r "$HOME/.private_functions" ]; then
   . "$HOME/.private_functions"
 fi
+
+if $(which direnv &> /dev/null); then
+  eval "$(direnv hook bash)"
+fi

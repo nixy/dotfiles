@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/vinegar"]
 	path = vim/.vim/bundle/vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule "vim/.vim/bundle/direnv"]
+	path = vim/.vim/bundle/direnv
+	url = https://github.com/direnv/direnv.vim.git

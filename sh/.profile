@@ -36,3 +36,7 @@ fi
 export HISTSIZE=5000
 export HISTFILE="$HOME/.history/sh"
 export HISTFILESIZE=10000
+
+if [ -r "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+	. "$HOME/.nix-profile/etc/profile.d/nix.sh"
+fi

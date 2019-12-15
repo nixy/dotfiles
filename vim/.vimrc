@@ -32,6 +32,7 @@ set nocompatible
 
   " Colors and syntax highlighting "
     colorscheme peachpuff
+    set background=dark
     filetype plugin on
     syntax on
 
