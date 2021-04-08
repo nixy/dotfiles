@@ -35,6 +35,11 @@ if [ -z "$__PROFILE_DONE" ]; then
     . $HOME/.profile
 fi
 
+# Source .env to extend with secret/sensitive environment variables if it exists
+if [ -r "$HOME/.env" ]; then
+	. "$HOME/.env"
+fi
+
 
 # Source aliases, if they exist
 if [ -f "$HOME/.aliases" ] && [ -r "$HOME/.aliases" ]; then
