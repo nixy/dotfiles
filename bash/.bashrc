@@ -36,12 +36,12 @@ export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_C
 
 # Source profile, if it hasn't already been loaded
 if [ -z "$__PROFILE_DONE" ]; then
-    . $HOME/.profile
+  . $HOME/.profile
 fi
 
 # Source .env to extend with secret/sensitive environment variables if it exists
 if [ -r "$HOME/.env" ]; then
-	. "$HOME/.env"
+  . "$HOME/.env"
 fi
 
 
