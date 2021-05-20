@@ -155,6 +155,9 @@ set nocompatible
       let g:SuperTabLongestEnhanced = 1
 
   "{- TAGBAR -}"
+    " Map toggle of the tagbar to f8
+      nnoremap <silent> <F8> :TagbarToggle<CR>
+      let g:tagbar_autoclose = 1
     " Use `hasktags` to generate tags for Haskell files
       let g:tagbar_type_haskell = {
         \ 'ctagsbin'  : 'hasktags',
