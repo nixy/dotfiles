@@ -31,3 +31,9 @@
 [submodule "vim/.vim/bundle/vinegar"]
 	path = vim/.vim/bundle/vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule "direnv"]
+	path = vim/.vim/bundle/direnv
+	url = https://github.com/direnv/direnv.vim.git
+[submodule "vim/.vim/bundle/vim-dim"]
+	path = vim/.vim/bundle/vim-dim
+	url = git@github.com:jeffkreeftmeijer/vim-dim.git

@@ -31,7 +31,7 @@ set nocompatible
 "{- INTERFACE -}"
 
   " Colors and syntax highlighting "
-    colorscheme peachpuff
+    colorscheme dim
     set background=dark
     filetype plugin on
     syntax on
